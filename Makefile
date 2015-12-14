@@ -30,9 +30,14 @@ taylor-kernel: ${OBJS}
 
 %.o: %.swift
 	@${BEG} "SWIFT" $<
-	@$(SWIFTC) $(SWIFTFLAGS) $< -o ${@:.o=}.ll
-	@$(CC) $(CFLAGS) -c ${@:.o=}.ll -o $@
+	@${SWIFTC} ${SWIFTFLAGS} $< -o ${@:.o=}.ll
+	@${CC} ${CFLAGS} -c ${@:.o=}.ll -o $@
 	@${END} "SWIFT" $<
+
+%.o: %.c
+	@${BEG} "CC" $<
+	@${CC} ${CFLAGS} -c $< -o $@
+	@${END} "CC" $<
 
 %.o: %.s
 	@${BEG} "YASM" $<
