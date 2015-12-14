@@ -29,12 +29,4 @@ _start:
 	hlt
 	jmp .hang
 
-global _TFOs7Processau11_unsafeArgvGSpGSpVs4Int8__
-_TFOs7Processau11_unsafeArgvGSpGSpVs4Int8__:
-	ret
-global _TFOs7Processau5_argcVs5Int32
-_TFOs7Processau5_argcVs5Int32:
-	ret
-
-
 

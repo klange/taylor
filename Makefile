@@ -7,7 +7,7 @@ TARGET=${ARCH}-pc-none-elf
 SWIFTC = swiftc
 CC = clang-3.8
 
-SWIFTFLAGS = -emit-ir
+SWIFTFLAGS = -emit-ir -parse-as-library
 CFLAGS = --target=${TARGET} -ffreestanding -Wno-override-module
 
 YASM = yasm -f elf
