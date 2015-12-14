@@ -1,4 +1,4 @@
-public func kmain() {
+@_silgen_name("kmain") public func kmain() {
 	let textptr = UnsafeMutablePointer<UInt16>(bitPattern: 0xB8000)
 
 	for var i = 0; i < 80 * 25; i++ {

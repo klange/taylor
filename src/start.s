@@ -21,8 +21,8 @@ global _start
 _start:
 	mov esp, stack_top
 
-	extern _TF4main5kmainFT_T_
-	call _TF4main5kmainFT_T_
+	extern kmain
+	call kmain
 
 	cli
 .hang:
