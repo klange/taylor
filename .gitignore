@@ -1,0 +1,3 @@
+taylor-kernel
+*.o
+*.ll

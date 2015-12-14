@@ -1,5 +1,7 @@
 # Taylor
 
-An attempt at running swift code on bare metal, and maybe eventually a kernel.
+Swift on bare metal.
 
-There's nothing to see here yet.
+## Requirements
+
+Obviously, you need the Swift compiler, which should also get you a working Clang. Make sure your Clang supports bare ELF targets.
